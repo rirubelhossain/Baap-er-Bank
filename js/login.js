@@ -14,10 +14,12 @@ document.getElementById("btn_id").addEventListener("click", function(){
     const get_email = email.value ;
     const get_password = password.value ;
 
-    if( get_email === "rubel@baap.com" && get_password === "karbarbank"){
-        console.log("email and password is ok");
+    if( get_email === "rubel@baap.com" && get_password === "bank"){
+        // console.log("email and password is ok");
+        location.href = "./bank.html";
     }else{
-        console.log("invalid user");
+        // console.log("invalid user");
+        alert("Invalid User")
     }
 
 
